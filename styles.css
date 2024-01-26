@@ -1,0 +1,310 @@
+
+/* Default styles for all screens */
+/* ... (your existing CSS) */
+
+/* Media query for desktop view */
+@media only screen and (max-width: 1024px) {
+  body {
+    display: none; /* Hide the content on smaller screens */
+  }
+
+  /* Optionally, you can add a message for smaller screens */
+  .mobile-message {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+* {
+ margin: 0;
+ padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    
+    width: 100%;
+    bottom: 0;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.fade-in h2 {
+    margin-bottom: 10px;
+}
+
+.fade-in p {
+    margin: 0;
+    padding: 5em;
+}
+
+
+
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.home {
+  height: 100vh;
+  position: relative;
+
+}
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  min-width: 100%;
+            min-height: 100%;
+            
+            
+        
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 2.5s ease;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(0,0,0,0.6);
+}
+.home-content {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+  color: #fff;
+  z-index: 3;
+}
+.home-content h1 {
+  font-family: Playfair Display, serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 85px;
+  line-height: 1.1;
+
+}
+.middle-line {
+  height: 20px;
+  width: 2px;
+  background: #fff;
+  margin: 40px auto;
+}
+.home-content button {
+  display: block;
+  font-size: 20px;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  background: transparent;
+  color: #fff;
+  margin: 50px auto 0;
+  padding: 16px 30px;
+  cursor: pointer;
+}
+
+/* Your existing styles */
+
+.inline {
+    display: inline-block;
+    margin: 0;
+    padding-left: 1em;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+#typing-effect {
+    color: rgba(255, 255, 255, 0.7);
+    padding-top: 1em;
+    padding-left: 6em;
+
+
+}
+
+#scroll-button {
+
+}
+
+#polymorphic-box {
+    transform: scale(0.8);
+    height: 29em;
+    width: 25em;
+    background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5px );
+-webkit-backdrop-filter: blur( 5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+
+.home2 {
+
+    background: #ffffff url(5667612.jpg);
+    background-size: cover;
+
+}
+
+#polymorphic-box2 {
+    transform: scale(1.8); /* Increase the size */
+    height: 45em; /* Increase the height */
+    width: 30em; /* Increase the width */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-left: 700px; /* Move it to the right */
+}
+
+
+
+
+
+
+.typing-container {
+    font-family: Monospace; /* Change to the font you want */
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+
+#auto-typing {
+    border-right: 2px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(40) infinite alternate-reverse;
+    margin-left: 8em;
+    margin-top: 40px; /* Add right margin */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 10px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.details {
+    font-size: 10px;
+    margin: 8px 0;
+    color: #555;
+}
+
+.education-item, .project {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.project:hover, .education-item:hover {
+    transform: translateY(-3px);
+    transition: transform 0.3s;
+}
+
+
+
+#toast {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    padding: 15px;
+}

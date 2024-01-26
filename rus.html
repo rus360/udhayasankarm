@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RUS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #fff; /* Set text color to contrast with the video */
+        }
+
+        #video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; /* Ensure the video is behind other elements */
+        }
+
+        header, footer {
+            background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay for better readability of text */
+            padding: 20px;
+            text-align: center;
+        }
+        .hidden {
+            display: none;
+            text-align: center;
+        }
+
+         @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        #hiddenText {
+            animation: fadeIn 2s forwards; /* 2s duration, forwards means it retains the final state */
+            text-align: center;
+            margin-top: 90px;
+            font-size: 2em;
+            color: rgba(255, 255, 255, 0.7);
+
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay muted loop id="video-bg">
+        <source src="summa2.mp4" type="video/mp4">
+        <!-- Add additional source elements for other video formats if needed -->
+    </video>
+
+    <div id="hiddenText" class="hidden">
+        <h2>RUS EXISTENCE</h2>
+    </div>
+
+
+
+    <h3 class="glitch-text"></h3>
+
+    <script>
+        setTimeout(function() {
+            document.getElementById('hiddenText').classList.remove('hidden');
+        }, 5000);
+    </script>
+	
+</body>
+</html>
